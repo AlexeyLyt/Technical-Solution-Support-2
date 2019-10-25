@@ -22,6 +22,12 @@ public class TitlesPanel extends JPanel implements ActionListener
     private int start_angle;
     private int shape;
     
+    
+    /** 
+     * @param _shape
+     * @return 
+     * анимация
+     */
     public TitlesPanel(final int _shape) {
         this.start_angle = 0;
         this.is_done = true;
@@ -30,6 +36,10 @@ public class TitlesPanel extends JPanel implements ActionListener
         this.animation.start();
     }
     
+    
+    /** 
+     * @param arg0
+     */
     @Override
     public void actionPerformed(final ActionEvent arg0) {
         if (this.is_done) {
@@ -37,6 +47,11 @@ public class TitlesPanel extends JPanel implements ActionListener
         }
     }
     
+    
+    /** 
+     * @param g
+     * реализация вращение объекта translate, rotate
+     */
     private void doDrawing(final Graphics g) {
         this.is_done = false;
         (this.g2d = (Graphics2D)g).setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -64,6 +79,10 @@ public class TitlesPanel extends JPanel implements ActionListener
         this.is_done = true;
     }
     
+    
+    /** 
+     * @param g
+     */
     public void paintComponent(final Graphics g) {
         super.paintComponent(g);
         this.doDrawing(g);

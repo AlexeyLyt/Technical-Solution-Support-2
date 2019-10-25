@@ -6,8 +6,13 @@ import javax.swing.JFrame;
 // Decompiled by Procyon v0.5.36
 // 
 
-public class TitlesFrame extends JFrame
+public class TitlesFrame extends JFrame 
 {
+    
+    /** 
+     * @return 
+     * разрешение консольного окна, оглавление, вызов TitlesPanel с передачей в него значений
+     */
     public TitlesFrame() {
         this.initUI();
     }
@@ -20,7 +25,12 @@ public class TitlesFrame extends JFrame
         this.setLocationRelativeTo(null);
     }
     
-    public static void main(final String[] args) {
+    
+    /** 
+     * @param Runnable(
+     * main
+     */
+    public static void main(final String[] args) { /** ddd */
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
