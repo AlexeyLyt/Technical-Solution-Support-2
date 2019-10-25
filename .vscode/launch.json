@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TitlesFrame",
+            "request": "launch",
+            "mainClass": "TitlesFrame"
+        }
+    ]
+}
